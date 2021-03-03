@@ -1,14 +1,15 @@
-53bdb91e6da02d438ee0f81b12afb1ea *DESCRIPTION
+17808ea794a57f1f2f851aca76150fae *DESCRIPTION
 365ba699194b55db5c011186d3491df0 *LICENSE
 f35399ae2f58a357010c12e88d79da1c *NAMESPACE
-da1b77c67ebedb28387cc4dc53822861 *R/lmdb.R
+3628baa0041504bf80c0451e96cfc278 *NEWS.md
+e48e4f76069defa5a3dae82fc5b1ce2c *R/lmdb.R
 77704259b3009cf68d667f8acfe93f64 *R/process_chunks.R
-8a7803b4895ce89b015e164d29a81bea *R/tl.R
+d8e6329f65eeae5de4bb6d775f37059d *R/tl.R
 27b6582093ff84feb03293ea9e1b9d0e *R/tl_create.R
 22c9e0e310e5e43771f2bc6a1bf15803 *R/tl_import.R
 f4181f3e0f66cb989f70d3f217178c99 *R/tl_provenance.R
 93a61008eb72b7ad734bfab0b68ed70d *R/utils.R
-3ca33b63d2cbf3c7092039614b7ac27f *README.md
+6797cc8b7f9db817e607c25ba57d9800 *README.md
 ab93392af2c51a6b0ddc5854d09b1ba2 *inst/WORDLIST
 118ebe6af86cea7ec71c211f596fc985 *inst/extdata/dwc_itis_test.tsv.gz
 7fe1f0204427f70f2be5b0313012574e *inst/extdata/prov.json
@@ -22,5 +23,5 @@ d90c5f079d513a841435ddfb84f81138 *man/tl_create.Rd
 ec1aa4c3c064d5705e4acb877e6a2623 *tests/testthat/setup-tests.R
 370f84155f44fb889d39dc750ec00a0c *tests/testthat/teardown-tests.R
 2d894e648c0ef21198039f858e090746 *tests/testthat/test-import_all.R
-4480a459fa043905c861b5a3ffc0834d *tests/testthat/test-tl.R
+d845c19e1af72ca9d5dc5d71bded5d85 *tests/testthat/test-tl.R
 3dc95dc1c3fa7597cfdce62e802792e8 *tests/testthat/test-tl_create.R

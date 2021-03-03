@@ -88,11 +88,45 @@ get_ids <- function(name,
                    dir = tl_dir()
 ){
   
+  ## tl resolver
   df <- tl(name, provider, version, dir)
-  df[df$taxonomicStatus == "accepted", "acceptedNameUsageID"]
-
+  
+  vapply(name, function(x){
+      df <- df[df$scientificName == x, ]
+      
+      if(nrow(df) < 1) return(NA_character_)
+      
+      # Unambiguous: one acceptedNameUsageID per name
+      if(nrow(df)==1) return(df[, "acceptedNameUsageID"])
+        
+      ## Drop infraspecies when not perfect match
+      df <- df[is.na(df$infraspecificEpithet),]
+      
+      ## If we resolve to a unique accepted ID, return that
+      ids <- unique(df$acceptedNameUsageID)
+      if(length(ids)==1){ 
+        return(ids)
+      } else {
+        warning(paste0("  Found ", bb(length(ids)), " possible identifiers for ", 
+                       ibr(x),
+                       ".\n  Returning ", bb('NA'), ". Try ",
+                       bb(paste0("tl('", x, "', '", provider,"')")),
+                       " to resolve manually.\n"),
+                call. = FALSE)
+        return(NA_character_)
+    }
+    }, 
+    character(1L))
 }
 
+ibr <- function(...){
+  if(!requireNamespace("crayon", quietly = TRUE)) return(paste(...))
+  crayon::italic(crayon::bold(crayon::red(...)))
+}
+bb <- function(...){
+  if(!requireNamespace("crayon", quietly = TRUE)) return(paste(...))
+  crayon::bold(crayon::blue(...))
+}
 
 #' Return `scientificName` names given taxonomic identifiers
 #' 
@@ -116,6 +150,9 @@ get_names <- function(id,
 ){
   
   df <- tl(id, provider, version, dir)
+  if(nrow(df) < 1) return(NA_character_)
+  
+  df <- df[df$taxonomicStatus == "accepted", ]
   df$scientificName
   
 }

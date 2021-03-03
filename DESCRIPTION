@@ -1,5 +1,5 @@
 Package: taxalight
-Version: 0.1.1
+Version: 0.1.2
 Title: A Lightweight and Lightning-Fast Taxonomic Naming Interface
 Description: Creates a local Lightning Memory-Mapped Database ('LMDB') 
              of many commonly used taxonomic authorities
@@ -26,15 +26,15 @@ ByteCompile: true
 Depends: R (>= 4.0)
 Imports: thor, contentid
 Suggests: jsonlite, spelling, testthat, covr, knitr, rmarkdown,
-        progress, utf8
+        progress, utf8, crayon
 URL: https://github.com/cboettig/taxalight
 BugReports: https://github.com/cboettig/taxalight
 Language: en-US
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-02-27 04:16:04 UTC; cboettig
+Packaged: 2021-03-02 22:38:30 UTC; cboettig
 Author: Carl Boettiger [aut, cre] (<https://orcid.org/0000-0002-1642-628X>),
   Kari Norman [aut] (<https://orcid.org/0000-0002-2029-2325>)
 Maintainer: Carl Boettiger <cboettig@gmail.com>
 Repository: CRAN
-Date/Publication: 2021-03-01 10:20:02 UTC
+Date/Publication: 2021-03-03 09:40:03 UTC
