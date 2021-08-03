@@ -1,7 +1,7 @@
-b4c5339d812a8aed93b6a31b632cef37 *DESCRIPTION
+d6bc8d14f06260a0eb47662f63208d09 *DESCRIPTION
 365ba699194b55db5c011186d3491df0 *LICENSE
 9cd487a9f63c58a383e560488f2d0f5e *NAMESPACE
-3b5f98811f6052a7221b0b00211c28c4 *NEWS.md
+b756fe1538c70d3e1bd2b591d7b53212 *NEWS.md
 57151864db7ea3dda69979753aa0ded8 *R/get_ids.R
 fa8ab6c1d954a4bfb85d84f218eddd0e *R/get_names.R
 f7468978a5671ad39ede0345096e2a59 *R/lmdb.R
@@ -25,5 +25,5 @@ d90c5f079d513a841435ddfb84f81138 *man/tl_create.Rd
 ec1aa4c3c064d5705e4acb877e6a2623 *tests/testthat/setup-tests.R
 370f84155f44fb889d39dc750ec00a0c *tests/testthat/teardown-tests.R
 2d894e648c0ef21198039f858e090746 *tests/testthat/test-import_all.R
-d845c19e1af72ca9d5dc5d71bded5d85 *tests/testthat/test-tl.R
+194bb190540ff0774d54adcddf6b5e04 *tests/testthat/test-tl.R
 3dc95dc1c3fa7597cfdce62e802792e8 *tests/testthat/test-tl_create.R
